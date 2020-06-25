@@ -8,7 +8,7 @@ namespace InterviewQuestions
     /// 
     /// Answer:
     /// dbObject Task is assigned to it's variable, but not performed as the task is not awaited and .Result hasn't been called to synchronously perform the task.
-    /// dbobjectTask is then synchronously performed and passed into the DoMoreWork method.
+    /// dbobjectTask is then synchronously performed causing a deadlock and passed into the DoMoreWork method.
     /// Console then writes the Database Objects Id.
     /// 
     /// 
